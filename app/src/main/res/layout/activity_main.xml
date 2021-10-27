@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8DEDE"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="371dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#932424"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="BUSCAR"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="61dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="412dp"
+        android:layout_height="143dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscar"
+        app:srcCompat="@drawable/desayuno_edited" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="412dp"
+        android:layout_height="143dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/comida"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="412dp"
+        android:layout_height="143dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/cena_edited"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
